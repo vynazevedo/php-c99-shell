@@ -1,3 +1,102 @@
-# C99-Shell
-Öncelikle bu sheller pek bir hacker tarafında bulunan sheller değildir.Özel kodlanmış c99 shelldir.Bu private c99 shell ile sunucudaki sitelere rahat bir şekilde girebilirsiniz.Düzenleme silme işlemlerini diğer c99 shelle göre daha rahat uyguluyabilirsiniz.Komut işlemleri diğer c99 shell gibidir. /Var/Named komutu sunucudaki siteleri listeler var user ise sunucudaki kullanıcı isimlerini gösterir.Home user public_html komutuyla ise sunucudaki bir sitenin içine rahat bir şekilde girebilirsiniz.Bu özel shelli Arap hacker tarafından kodlanıp piyasaya sürülmüştür.Genel başta 100 $ satılmaya başlamıştır fakat sonradan bedava sürümü verilmeye başlamıştır.c99 web shell herkes tarafından bilinen piyasada olan ilk shelldir.2002 sitesinde Hackerler tarfından kullanılmaya başlanmıştır.Şuan 2015 piyasında kullanılan bu shell genellikle wordpress ve joomla upload açıklarında deneniyor.c99 shell tanımını yapmaya kalkarsak c99 shell php scriptidir.Bazen virüs olarak kabül edinmekte bazense hack aracı olarak bilinmektedir.Yüklenilen c99 shellde yeşil yanıyorsa perm vardır yani yazma silme gibi izin vardır anlamına gelmekte.Eğerki c99 shellde perm yoksa şöyle hack yoluna başvurabiliriz.wp-confing.php ( wordpress ) configuration.php ( joomla ) gibi confing dosyasını okuyup yukardaki sql bölümünden veritabanına bağlanıp database  düzenlemesi yapabilirsiniz yada admin kullanıcı adı şifresi değiştirebilirsiniz.wordpresslerde genellikle wp-userde kullanıcı adı ve şifreleri bulunmakta.Fakat şifreler genellike md5lidir.Ama bunun içni siz yeni md5 oluşturup değiştirebilirsiniz.Fakat baştada söylediğimzi gibi bu özel c99 shellde buna gerek bile kalmıycak.Permleri özel olarak yeşil yapıp işlem yapmanızı sağlıyor.Shellimize girdiğimizde en alt sağ kısımda upload etme seçeneğinide sizlere sunuyor.Bazense root yapma imkanı sunucudaki siteleri hepsine index atma gibi bir özelliğide sunuyor.Bazı c99 shellerde genellikle antivürsler ‘ Hack ‘ olarak algıladığı için virüs olarak görüyor.Bu yüzden anti virüs kapatmayı deneyin yoksa otamatik anti virüsler tarafından siliniyor.4hackerz.org ekibi olarak bu private c99 shell ile bol hackler dileriz.
-<a href="http://4hackerz.org/" title="c99 shell">c99 shell</a>
+# Estudo sobre C99 Shell - Análise de Segurança Web
+
+> ⚠️ **AVISO IMPORTANTE**: Este é um repositório puramente educacional, focado no estudo de segurança web e análise de vulnerabilidades. Todo o conteúdo é disponibilizado exclusivamente para fins de pesquisa e aprendizado em ambientes controlados de laboratório.
+
+## 📚 Sobre o Projeto
+
+Este repositório contém uma análise técnica e histórica do C99 Shell, uma ferramenta PHP histórica que foi amplamente utilizada para demonstrar vulnerabilidades em sistemas web. O estudo faz parte de uma pesquisa acadêmica sobre segurança web e desenvolvimento de contramedidas.
+
+## 🔍 Contexto Histórico
+
+- Origem: Desenvolvido inicialmente em 2002
+- Propósito original: Script PHP para administração de sistemas
+- Evolução: Amplamente modificado ao longo dos anos
+- Impacto: Contribuiu para a evolução de práticas de segurança web
+
+## 📋 Características Técnicas Analisadas
+
+1. **Funcionalidades Principais**:
+   - Listagem de diretórios do sistema
+   - Visualização de usuários do servidor
+   - Gerenciamento de arquivos
+   - Acesso a configurações de CMS
+   - Interface para upload de arquivos
+
+2. **Aspectos Técnicos**:
+   - Baseado em PHP
+   - Capacidade de leitura de configurações
+   - Manipulação de permissões
+   - Interação com banco de dados
+
+## 🛡️ Importância para Segurança Web
+
+1. **Vulnerabilidades Comuns**:
+   - Upload de arquivos
+   - Configurações inadequadas de CMS
+   - Permissões de diretório incorretas
+
+2. **Contramedidas Recomendadas**:
+   - Validação rigorosa de uploads
+   - Configuração adequada de permissões
+   - Monitoramento de atividades suspeitas
+   - Atualizações regulares de sistemas
+
+## 🔒 Medidas de Proteção
+
+Para proteger sistemas web contra vulnerabilidades similares:
+
+1. **Configuração de Servidor**:
+   ```nginx
+   # Bloquear acesso a arquivos sensíveis
+   location ~ \.(php|php5|phtml)$ {
+       deny all;
+   }
+   ```
+
+2. **Configuração PHP**:
+   ```ini
+   disable_functions = exec,shell_exec,system
+   allow_url_fopen = Off
+   allow_url_include = Off
+   ```
+
+3. **Permissões de Arquivo**:
+   ```bash
+   # Configurar permissões corretas
+   chmod 644 /path/to/files
+   chmod 755 /path/to/directories
+   ```
+
+## 📖 Uso Educacional
+
+Este repositório deve ser usado para:
+1. Estudar práticas de segurança web
+2. Entender vulnerabilidades históricas
+3. Desenvolver contramedidas
+4. Pesquisa acadêmica
+
+## 🚫 Aviso Legal
+
+Este conteúdo é disponibilizado APENAS para fins educacionais e de pesquisa. O uso desta informação para atividades maliciosas é estritamente proibido e pode resultar em consequências legais.
+
+## 🔍 Recursos para Estudo
+
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- [Web Security Academy](https://portswigger.net/web-security)
+- [PHP Security Guide](https://phpsecurity.readthedocs.io/en/latest/)
+
+## 👥 Contribuição
+
+Contribuições são bem-vindas, especialmente:
+- Análises de segurança
+- Documentação de contramedidas
+- Estudos de caso
+- Materiais educacionais
+
+## 📜 Licença
+
+Este projeto é disponibilizado sob a licença MIT para fins exclusivamente educacionais.
+
+---
+
+> 🎓 **Nota Educacional**: Este repositório é parte de um projeto de estudos em segurança da informação. Todo o conteúdo deve ser utilizado apenas em ambientes controlados de laboratório.

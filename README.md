@@ -93,10 +93,6 @@ Contribuições são bem-vindas, especialmente:
 - Estudos de caso
 - Materiais educacionais
 
-## 📜 Licença
-
-Este projeto é disponibilizado sob a licença MIT para fins exclusivamente educacionais.
-
 ---
 
 > 🎓 **Nota Educacional**: Este repositório é parte de um projeto de estudos em segurança da informação. Todo o conteúdo deve ser utilizado apenas em ambientes controlados de laboratório.
